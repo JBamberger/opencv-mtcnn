@@ -68,6 +68,9 @@ std::vector<Face> ProposalNetwork::run(const cv::Mat &img,
 
   while (faceSize <= maxFaceSize) {
     float currentScale = (P_NET_WINDOW_SIZE) / faceSize;
+
+
+    
     int imgHeight = std::ceil(img.rows * currentScale);
     int imgWidth = std::ceil(img.cols * currentScale);
     cv::Mat resizedImg;
